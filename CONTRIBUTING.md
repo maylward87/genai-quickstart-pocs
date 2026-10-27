@@ -115,9 +115,11 @@ Before starting work on a new feature or bug fix, please check if there is an ex
    git push origin feature/your-feature-name
    ```
 
-8. **Submit a pull request**: From your fork to the main repository's `main` branch.
+8. **Complete the Security Review process** as outlined in the **Security Guidelines** below
 
-9. **Code review**: Address any feedback from reviewers.
+9. **Submit a pull request**: From your fork to the main repository's `main` branch. Please include a link to the security ticket in the comments.
+
+10. **Code review**: Address any feedback from reviewers.
 
 ## Development Guidelines
 
@@ -196,10 +198,15 @@ All POCs should include:
 
 ## Security Guidelines
 
-1. **Never commit credentials** or sensitive information to the repository.
-2. Use AWS IAM best practices with least privilege principles.
-3. If you discover a security vulnerability, please report it privately by following the [AWS vulnerability reporting process](http://aws.amazon.com/security/vulnerability-reporting/).
-4. Do not create public GitHub issues for security concerns.
+All code should be reviewed by a Security Guardian before you create a pull request. Here's the process:
+1. Please complete steps 4.1-4.7 in the [Public Content Guardian Runbook](https://console.harmony.a2z.com/engsec-docs/SA/SMGS-security-reviews/public-content-guardian-runbook)
+
+2. [Create a ticket](https://t.corp.amazon.com/create/templates/9aad04fe-0332-403a-be71-c263c2dbfb82) for the Security Guardian team to review your contribution. 
+
+3. Please attach the outputs of the security tools used in the process. 
+
+4. Please create a pull request only after the Security Guardian has approved your contribution. Please attach the URL to the ticket in the comments(See **Pull Request Process** above) 
+
 
 ## Licensing
 
